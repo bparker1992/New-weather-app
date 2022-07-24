@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 2 Homework SheCodes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/736873f041.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchbox">
+        <div class="col-12">
+          <form id="search-form">
+            <label for="SearchLocation">
+              Search other location
+            </label>
+            <input
+              type="search"
+              name="SearchLocation"
+              placeholder="e.g. London"
+              id="city-query"
+            />
+            <input type="submit" name="SubmitOtherLocation" />
+          </form>
+        </div>
+      </div>
+      <div class="col-6">
+        <h1 id="city">
+          Location
+        </h1>
+        <ul>
+          <li id="date">
+            Date
+          </li>
+        </ul>
+        <h2 id="current-temperature">
+          40°c
+        </h2>
+        <i class="fa-solid fa-circle circleIcon"></i>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-4">Wind: <span id="wind">0</span>km/h</div>
+        <div class="col-4">Humidity: <span id="humidity">0</span>%</div>
+        <div class="col-4">Cloud Coverage: <span id="cloud">0</span>%</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sunday</h5>
+              <i class="fa-solid fa-circle dayOfWeekIcon"></i>
+              <p class="card-text">43° | 22°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Monday</h5>
+              <i class="fa-solid fa-cloud-sun dayOfWeekIcon"></i>
+              <p class="card-text">43° | 21°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <i class="fa-solid fa-cloud-sun-rain dayOfWeekIcon"></i>
+              <p class="card-text">35° | 18°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <i class="fa-solid fa-cloud-sun dayOfWeekIcon"></i>
+              <p class="card-text">36° | 19°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <i class="fa-solid fa-circle dayOfWeekIcon"></i>
+              <p class="card-text">43° | 23°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <i class="fa-solid fa-circle dayOfWeekIcon"></i>
+              <p class="card-text">44° | 24°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
